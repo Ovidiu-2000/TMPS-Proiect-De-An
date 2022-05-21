@@ -1,0 +1,21 @@
+﻿@using WebApplication1.Models
+@model ActivityCounterOnStudents
+
+@{
+    ViewData["Title"] = "TodayStatsOnStudents";
+}
+
+ <table class="table">
+        <thead>
+        <th>Students Added Today</th>
+        <th>Students Edited Today</th>
+        <th>Students Deleted Today</th>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>@Model.StudentsAddedToday</td>
+                    <td>@Model.StudentsEditedToday</td>
+                    <td>@Model.StudentsDeletedToday</td>
+                </tr>
+        </tbody>
+    </table>
